@@ -26,7 +26,8 @@ body {
 
 #container {
     width: 48vw;
-    margin-bottom: 5%;
+    margin-bottom: 10rem;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -44,39 +45,37 @@ body {
         width: 100%;
         object-fit: scale-down;
     }
-    .button {
-        display: inline-block;
-        width: 70vw;
-        height: 10vh;
-        font-size: 1.2rem;
-        font-weight: 600;
-        background-color: #e9526e;
-        color: #fefefe;
-        border-radius: 0.5rem;
-        margin: 0.5rem 0 1rem;
+    .btnbox {
+        width: 100vw;
         text-align: center;
-        line-height: 2.8rem;
-        @include xxl {
-            width: 60vw;
-        }
-        &:hover{
-        background-color: #fa6f88;
+        font-size: 1.5em;
+        margin: 1em 0;
+        padding-bottom: 5rem;
 
-        }
-        
-        svg {
-            padding-top: 1px;
-        }
-        &.minQuan {
-            background-color: #8d426e;
-            &:hover{
-                background-color: #cf68a4;
+        .button {
+            display: inline-block;
+            width: 70vw;
+            height: 3rem;
+            font-size: 1.2rem;
+            font-weight: 600;
+            background-color: #8B81BD;
+            color: #fefefe;
+            border-radius: 0.5rem;
+            margin: 0.5rem 0;
+            text-align: center;
+            line-height: 2.8rem;
+
+            @include xxl {
+                width: 60vw;
             }
-        }
-        &.xinSheng {
-            background-color: #229175;
-            &:hover{
-                background-color: #41c4a3;
+            &:hover {
+                background-color: #a296dd;
+            }
+            &:last-child{
+            }
+    
+            svg {
+                padding-top: 1px;
             }
         }
     }
