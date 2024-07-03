@@ -46,34 +46,41 @@ body {
         object-fit: scale-down;
     }
     .btnbox {
-        width: 100vw;
+        width: 50vw;
         text-align: center;
         font-size: 1.5em;
         margin: 1em 0;
         padding-bottom: 5rem;
+        @include xxl {
+            width: 60vw;
+        }
+        @include m3d {
+            width: 90vw;
+        }
+        @include sm {
+            width: 100vw;
+        }
 
         .button {
             display: inline-block;
-            width: 70vw;
+            width: 70%;
             height: 3rem;
             font-size: 1.2rem;
             font-weight: 600;
-            background-color: #8B81BD;
+            background-color: #8b81bd;
             color: #fefefe;
             border-radius: 0.5rem;
             margin: 0.5rem 0;
             text-align: center;
             line-height: 2.8rem;
 
-            @include xxl {
-                width: 60vw;
-            }
+            
             &:hover {
                 background-color: #a296dd;
             }
-            &:last-child{
+            &:last-child {
             }
-    
+
             svg {
                 padding-top: 1px;
             }
