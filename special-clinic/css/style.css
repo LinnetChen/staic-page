@@ -201,15 +201,30 @@ body {
      object-fit: scale-down;
 }
 #container .btnBox {
-  margin-top: 1.5rem;
-  padding-bottom: 2rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  width: 50vw;
+  text-align: center;
+  font-size: 1.5em;
+  margin: 1em 0;
+  padding-bottom: 5rem;
 }
-#container .button {
+@media all and (max-width: 1440px) {
+  #container .btnBox {
+    width: 60vw;
+  }
+}
+@media all and (max-width: 800px) {
+  #container .btnBox {
+    width: 90vw;
+  }
+}
+@media all and (max-width: 576px) {
+  #container .btnBox {
+    width: 100vw;
+  }
+}
+#container .btnBox .button {
   display: inline-block;
-  width: 70vw;
+  width: 70%;
   height: 3rem;
   font-size: 1.2rem;
   font-weight: 600;
@@ -220,29 +235,9 @@ body {
   text-align: center;
   line-height: 2.8rem;
 }
-@media all and (max-width: 1440px) {
-  #container .button {
-    width: 60vw;
-  }
-}
-#container .button:hover {
+#container .btnBox .button:hover {
   background-color: #fa6f88;
 }
-#container .button:last-child {
-  margin-bottom: 100px;
-}
-#container .button svg {
+#container .btnBox .button svg {
   padding-top: 1px;
-}
-#container .button.minQuan {
-  background-color: #8d426e;
-}
-#container .button.minQuan:hover {
-  background-color: #cf68a4;
-}
-#container .button.xinSheng {
-  background-color: #229175;
-}
-#container .button.xinSheng:hover {
-  background-color: #41c4a3;
 }/*# sourceMappingURL=style.css.map */
