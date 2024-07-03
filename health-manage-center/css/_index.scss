@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css?family=Share+Tech+Mono|Montserrat:700");
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+    box-sizing: border-box;
+    color: inherit;
+    font-family: "微軟正黑體";
+}
+
+body {
+    background-color: #f3f4f9;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    font-size: 16px;
+    @include lg {
+        font-size: 14px;
+    }
+    @include sm {
+        font-size: 10px;
+    }
+}
+
+#container {
+    width: 48vw;
+    margin-bottom: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include xxl {
+        width: 60vw;
+    }
+    @include m3d {
+        width: 90vw;
+    }
+    @include sm {
+        width: 100vw;
+    }
+    img {
+        // border: 1px solid blue;
+        width: 100%;
+        object-fit: scale-down;
+    }
+    .button {
+        display: inline-block;
+        width: 70vw;
+        height: 10vh;
+        font-size: 1.2rem;
+        font-weight: 600;
+        background-color: #e9526e;
+        color: #fefefe;
+        border-radius: 0.5rem;
+        margin: 0.5rem 0 1rem;
+        text-align: center;
+        line-height: 2.8rem;
+        @include xxl {
+            width: 60vw;
+        }
+        &:hover{
+        background-color: #fa6f88;
+
+        }
+        
+        svg {
+            padding-top: 1px;
+        }
+        &.minQuan {
+            background-color: #8d426e;
+            &:hover{
+                background-color: #cf68a4;
+            }
+        }
+        &.xinSheng {
+            background-color: #229175;
+            &:hover{
+                background-color: #41c4a3;
+            }
+        }
+    }
+}
