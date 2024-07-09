@@ -169,7 +169,7 @@ body {
 }
 @media all and (max-width: 660px) {
   .block {
-    height: 200%;
+    height: 180%;
     min-height: 410px;
   }
 }
@@ -206,7 +206,6 @@ body {
 }
 @media all and (max-width: 576px) {
   .block .textBox {
-    margin: 30px auto;
     padding: 30px 30px;
     width: 90vw;
   }
