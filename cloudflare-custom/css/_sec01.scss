@@ -22,67 +22,81 @@ body {
     border: 1px solid red;
     display: block;
     align-content: center;
-    height: 100vh;
-}
-
-.title {
-    text-align: center;
-}
-.textAssist {
-    text-align: left;
-}
-
-.ulDot {
-    list-style-type: disc;
-    padding-left: 25px;
-    li {
-        line-height: 20px;
-        margin-top: 10px;
+    height: 100%;
+    min-height: 500px;
+    @include mmd{
+        height: 200%;
+        min-height: 410px;
     }
-}
-
-.olNum {
-    list-style-type: decimal;
-    padding-left: 25px;
-    li {
-        line-height: 20px;
-        margin-top: 10px;
+    @include xxs{
+        height: 250%;
     }
-}
-
-.textBox {
-    width: 30vw;
-    margin: 0 auto;
-    z-index: 0;
-    text-align: left;
-    // border: 1px solid blue;
-    padding: 20px 20px 0px;
-    @include xxl() {
-        width: 45vw;
-    }
-    @include xl() {
-        width: 60vw;
-    }
-    @include sm() {
-        padding: 30px 30px;
-        width: 90vw;
+    @include xs{
+        height: 300%;
     }
 
-    P {
-        font-family: "Share Tech Mono", monospace;
-        color: #000;
-        font-size: 17px;
-        font-weight: 900;
-        line-height: 1.4;
+    .title {
+        text-align: center;
     }
 
-    a {
-        color: rgb(25, 79, 167);
-        text-decoration: underline;
-        text-underline-offset: 5px;
-        margin-left: 5px;
+    .textBox {
+        width: 30vw;
+        margin: 0 auto;
+        z-index: 0;
+        text-align: left;
+        border: 1px solid blue;
+        padding: 20px 20px 0px;
+        @include xxl() {
+            width: 45vw;
+        }
+        @include xl() {
+            width: 60vw;
+        }
+        @include sm() {
+        margin: 30px auto;
+            padding: 30px 30px;
+            width: 90vw;
+        }
+        
+        .ulDot {
+            list-style-type: disc;
+            padding-left: 25px;
+            li {
+                line-height: 20px;
+                margin-top: 10px;
+            }
+        }
+        
+        .olNum {
+            list-style-type: decimal;
+            padding-left: 25px;
+            li {
+                line-height: 20px;
+                margin-top: 10px;
+            }
+        }
+    
+        .textAssist {
+            text-align: left;
+        }
+        
+        P {
+            font-family: "Share Tech Mono", monospace;
+            color: #000;
+            font-size: 17px;
+            font-weight: 900;
+            line-height: 1.4;
+        }
+    
+        a {
+            color: rgb(25, 79, 167);
+            text-decoration: underline;
+            text-underline-offset: 5px;
+            margin-left: 5px;
+        }
     }
 }
+
 
 .bgLU {
     position: fixed;
