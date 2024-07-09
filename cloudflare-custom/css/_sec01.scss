@@ -23,13 +23,17 @@ body {
     display: block;
     align-content: center;
     height: 100%;
-    min-height: 500px;
+    min-height: 600px;
     @include mmd{
-        height: 180%;
-        min-height: 410px;
+        height: 120%;
+        min-height: 630px;
+    }
+    @include sm{
+        min-height: 800px;
     }
     @include xxs{
         height: 250%;
+        min-height: 880px;
     }
     @include xs{
         height: 300%;

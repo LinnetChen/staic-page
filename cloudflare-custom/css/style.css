@@ -165,17 +165,23 @@ body {
   display: block;
   align-content: center;
   height: 100%;
-  min-height: 500px;
+  min-height: 600px;
 }
 @media all and (max-width: 660px) {
   .block {
-    height: 180%;
-    min-height: 410px;
+    height: 120%;
+    min-height: 630px;
+  }
+}
+@media all and (max-width: 576px) {
+  .block {
+    min-height: 800px;
   }
 }
 @media all and (max-width: 375px) {
   .block {
     height: 250%;
+    min-height: 880px;
   }
 }
 @media all and (max-width: 320px) {
