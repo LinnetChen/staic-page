@@ -162,31 +162,31 @@ body {
 
 .block {
   display: block;
-  align-content: center;
   height: 100%;
-  min-height: 600px;
+  min-height: 575px;
 }
 @media all and (max-width: 660px) {
   .block {
-    min-height: 630px;
+    min-height: 615px;
   }
 }
 @media all and (max-width: 576px) {
   .block {
-    min-height: 800px;
+    min-height: 560px;
   }
 }
 @media all and (max-width: 375px) {
   .block {
-    min-height: 890px;
+    min-height: 700px;
   }
 }
 @media all and (max-width: 320px) {
   .block {
-    min-height: 920px;
+    min-height: 820px;
   }
 }
 .block .title {
+  margin-top: 50px;
   text-align: center;
 }
 .block .textBox {

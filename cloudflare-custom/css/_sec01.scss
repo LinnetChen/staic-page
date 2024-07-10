@@ -17,24 +17,27 @@ body {
 }
 
 .block {
+    // border: red 1px solid;
     display: block;
-    align-content: center;
+    // align-content: center;
     height: 100%;
-    min-height: 600px;
-    @include mmd{
-        min-height: 630px;
+    min-height: 575px;
+    @include mmd {
+        min-height: 615px;
     }
-    @include sm{
-        min-height: 800px;
+    @include sm {
+        min-height: 560px;
     }
-    @include xxs{
-        min-height: 890px;
+    @include xxs {
+        min-height: 700px;
     }
-    @include xs{
-        min-height: 920px;
+    @include xs {
+        min-height: 820px;
     }
 
     .title {
+        // border: blue 1px solid;
+        margin-top: 50px;
         text-align: center;
     }
 
@@ -76,7 +79,7 @@ body {
         .textAssist {
             text-align: left;
         }
-        
+
         P {
             font-family: "Share Tech Mono", monospace;
             color: #000;
@@ -93,7 +96,6 @@ body {
         }
     }
 }
-
 
 .bgLU {
     position: fixed;
